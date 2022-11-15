@@ -41,5 +41,22 @@ const kyle = new Person(
 
 kyle.print() //Go To Line27
 kyle.printName?.() //Checks first if printName is present. Cuts off if not
+console.log(kyle.hobbies?.[1].toLowerCase()) //Checks if data from array hobbies[0] is present. Cuts off if not
 
-printPersonStreet(undefined)
+printPersonStreet(kyle)
+
+//Object Shorthand
+
+const name2 = 'John'
+const favoriteFood = 'Rice'
+
+const john = {
+    name2, //Converts key to object. Only works if variable on line 50 is the same as key.
+    favoriteFood
+}
+
+console.log(john)
+
+//Defer/Async Loading. Defer - body loads before running any Javascript
+const button = document.querySelector("button")
+button.style.backgroundColor="Green"
